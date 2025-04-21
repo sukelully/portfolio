@@ -1,5 +1,3 @@
 # portfolio
 
-Welcome to my devloper portfolio! You can find what I'm working on at by following the link below:
-
-[Go to site]()
+Welcome to my developer portfolio! You can find what I'm working on by [following this link.]()
