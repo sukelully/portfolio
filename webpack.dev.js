@@ -11,7 +11,7 @@ module.exports = {
   },
   devtool: "eval-source-map",
   devServer: {
-    static: false, // Disable serving static files from "dist"
+    static: false,
     open: true,
     hot: true,
     compress: true,
