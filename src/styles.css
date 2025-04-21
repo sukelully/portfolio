@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --highlight-color: #134e4a;
+}
+
+.highlight-color {
+  background-color: var(--highlight-color);
+}
+
+#typing-animation-div {
+    animation: typing-animation 1.5s step-start infinite;
+}
+
+@keyframes typing-animation {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
