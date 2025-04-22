@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sukelully.dev</title>
+    <script src="https://kit.fontawesome.com/9ab3110fa7.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
 
+    <!-- NAVBAR -->
     <header class="highlight-color text-white sticky top-0 z-10">
         <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
             <h1 class="text-3xl font-medium">
@@ -38,11 +41,12 @@
                     Front-End Developer with an <span class="text-indigo-700 dark:text-indigo-300">Engineering
                         Mindset</span>
                 </h2>
-                <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">Hello! I'm
+                <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">Hi! I'm
                     a front-end developer with a background in electronic engineering.</p>
             </article>
             <div id="image-container" class="flex flex-row gap-4 items-end">
-                <img class="w-1/2" src="./img/profile-pic.png" alt="A selfie of myself in an aircraft wearing a headset!">
+                <img class="w-1/2" src="./img/profile-pic.png"
+                    alt="A selfie of myself in an aircraft wearing a headset!">
                 <div id="typing-animation-div" class="w-1/3 highlight-color h-3"></div>
             </div>
         </section>
@@ -51,13 +55,15 @@
                 Tech Stack
             </h3>
             <ul class="w-3/4 list-none mx-auto my-6 flex justify-center flex-wrap flex-row items-center gap-4">
-                <li class="border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">JavaScript</li>
-                <li class="border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">HTML/CSS</li>
-                <li class="border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Tailwind CSS</li>
-                <li class="border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Python</li>
-                <li class="border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">React</li>
-                <li class="border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">MySQL</li>
-                <li class="border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Node.js</li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">JavaScript
+                </li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">HTML/CSS</li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Tailwind CSS
+                </li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Python</li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">React</li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">MySQL</li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Node.js</li>
             </ul>
         </div>
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
@@ -69,18 +75,39 @@
             </h2>
 
             <div id="unwind-chimes" class="dark:bg-slate-800 bg-slate-300 rounded-3xl p-8">
-                <h3 class="text-3xl pb-6 text-center sm:text-left">
-                    Unwind Chimes
+                <h3 class="text-4xl pb-6 text-center sm:text-left">
+                    Unwind Chimes (WIP)
                 </h3>
                 <div class="flex flex-col sm:flex-row gap-8 items-center">
-                    <img src="./img/unwind-chimes.png" class="w-1/2" alt="Visual mockup for Unwind Chimes app featuring floating gradient balls and a central black orb on a minimal white canvas.">
-                    <p>An interactive ambience generator that uses randomness to create evolving, relaxing soundscapes.</p>
+                    <img src="./img/unwind-chimes.png" class="w-1/2"
+                        alt="Visual mockup for Unwind Chimes app featuring floating gradient balls and a central black orb on a minimal white canvas.">
+                    <p>
+                        Unwind Chimes is an interactive web app that creates random, evovling chord progressions and relaxing soundscapes using physics based simulations powered by Matter.js.
+                        <br>
+                        <br>
+                        It employs the Karplus-Strong plucked string algorithm to generate audio in the browser via the Web Audio API.
+                    </p>
+                </div>
+                <div id="links-container" class="flex flex-row justify-center pt-6 gap-8">
+                    <a  class="bg-indigo-700 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-indigo-800 transition duration-300"
+                        href="https://github.com/sukelully/unwind-chimes"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span class="pl-1">Visit Site</span>
+                    </a>
+                    <a  class="bg-indigo-700 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-indigo-800 transition duration-300"
+                        href="https://sukelully.github.io/unwind-chimes/"
+                        target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <span class="pl-1">Source Code</span>
+                    </a>
                 </div>
             </div>
-            
+
         </section>
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
-        
+
         <!-- ABOUT ME -->
         <section id="about-me" class="p-6 my-12">
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
