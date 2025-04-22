@@ -9,10 +9,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
-<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+<body class="min-h-screen bg-slate-50 dark:bg-gray-950 dark:text-white">
 
     <!-- NAVBAR -->
-    <header class="highlight-color text-white sticky top-0 z-10">
+    <header class="bg-teal-900 text-white sticky top-0 z-10 p-1">
         <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
             <h1 class="text-3xl font-medium">
                 Luke Sullivan
@@ -42,7 +42,7 @@
                         Mindset</span>
                 </h2>
                 <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">Hi! I'm
-                    a front-end developer with a background in electronic engineering.</p>
+                    a front-end developer with a background in electronic engineering and audio technology.</p>
             </article>
             <div id="image-container" class="flex flex-row gap-4 items-end">
                 <img class="w-1/2" src="./img/profile-pic.png"
@@ -69,8 +69,8 @@
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
 
         <!-- PROJECTS -->
-        <section id="projects" class="p-6 my-12">
-            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+        <section id="projects" class="p-6 my-12 flex flex-col gap-20">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl text-slate-900 dark:text-white">
                 Projects
             </h2>
 
@@ -79,7 +79,7 @@
                     Unwind Chimes (WIP)
                 </h3>
                 <div class="flex flex-col sm:flex-row gap-8 items-center">
-                    <img src="./img/unwind-chimes.png" class="w-1/2"
+                    <img src="./img/unwind-chimes.png" class="sm:w-1/2 w-3/4"
                         alt="Visual mockup for Unwind Chimes app featuring floating gradient balls and a central black orb on a minimal white canvas.">
                     <p>
                         Unwind Chimes is an interactive web app that creates random, evovling chord progressions and relaxing soundscapes using physics based simulations powered by Matter.js.
@@ -88,19 +88,64 @@
                         It employs the Karplus-Strong plucked string algorithm to generate audio in the browser via the Web Audio API.
                     </p>
                 </div>
-                <div id="links-container" class="flex flex-row justify-center pt-6 gap-8">
-                    <a  class="bg-indigo-700 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-indigo-800 transition duration-300"
-                        href="https://github.com/sukelully/unwind-chimes"
+                <div id="links-container" class="flex flex-row flex-wrap justify-center pt-6 gap-8">
+                    <a class="bg-indigo-700 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-indigo-800 transition duration-300 flex flex-row items-center text-nowrap"
+                        href="https://sukelully.github.io/unwind-chimes/"
                         target="_blank"
                         rel="noopener noreferrer">
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        <span class="pl-1">Visit Site</span>
+                        <span class="pl-2">Visit Site</span>
                     </a>
-                    <a  class="bg-indigo-700 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-indigo-800 transition duration-300"
-                        href="https://sukelully.github.io/unwind-chimes/"
+                    <a class="bg-indigo-700 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-indigo-800 transition duration-300 flex flex-row items-center text-nowrap"
+                        href="https://github.com/sukelully/unwind-chimes"
                         target="_blank">
                         <i class="fa-brands fa-github"></i>
-                        <span class="pl-1">Source Code</span>
+                        <span class="pl-2">Source Code</span>
+                    </a>
+                </div>
+            </div>
+
+            <div id="stringtendo" class="dark:bg-slate-800 bg-slate-300 rounded-3xl p-8">
+                <h3 class="text-4xl pb-6 text-center sm:text-left">
+                    Stringtendo.js
+                </h3>
+                <div class="flex flex-col sm:flex-row-reverse gap-8 items-center">
+                    <img src="./img/stringtendo.jpg" class="sm:w-1/2 rounded-lg"
+                        alt="">
+                    <p>
+                        Stringtendo.js is a digital instrument I created for my final year BEng project at university. Joystick and accelerometer data is sent to the broswer using an Arduino microcontroller via the Web Serial API where it is sonified using the Tone.js library.
+                        <br>
+                        <br>
+                        The main purpose of the project was to investigate the cause of the poor sound quality of Tone.js's <code>PluckSynth</code> module. Although I was able to implement an improvement in my code, submitting a pull request was not possible due to the problem <code>FeedbackCombFilter</code> module having other dependencies.
+                    </p>
+                </div>
+                <div id="links-container" class="flex flex-row justify-center pt-6 gap-8 flex-wrap">
+                    <a class="bg-indigo-700 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-indigo-800 transition duration-300 flex flex-row items-center text-nowrap"
+                        href="https://github.com/sukelully/stringtendo.js"
+                        target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <span class="pl-2">Source Code</span>
+                    </a>
+                </div>
+            </div>
+
+            <div id="stringtendo" class="dark:bg-slate-800 bg-slate-300 rounded-3xl p-8">
+                <h3 class="text-4xl pb-6 text-center sm:text-left">
+                    clum.sy
+                </h3>
+                <div class="flex flex-col sm:flex-row gap-8 items-center">
+                    <img src="./img/clum-sy.png" class="sm:w-1/2 rounded-lg"
+                        alt="Visual mockup for Unwind Chimes app featuring floating gradient balls and a central black orb on a minimal white canvas.">
+                    <p>
+                        clum.sy is another interactive music app built for iPads in Swift as part of my iOS Audio Programming module at university. The app is essentially a precursor to Unwind Chimes and functions very similarly, though it uses samples instead of synthesised audio.
+                    </p>
+                </div>
+                <div id="links-container" class="flex flex-row justify-center pt-6 gap-8">
+                    <a class="bg-indigo-700 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-indigo-800 transition duration-300 flex flex-row items-center text-nowrap"
+                        href="https://github.com/sukelully/clum.sy"
+                        target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <span class="pl-2">Source Code</span>
                     </a>
                 </div>
             </div>
