@@ -14,7 +14,7 @@
     "url": "git+https://github.com/sukelully/portfolio.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Luke Sullivan",
   "license": "ISC",
   "homepage": "https://sukelully.github.io/portfolio/",
   "devDependencies": {

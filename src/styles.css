@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,7 +19,11 @@
 }
 
 #typing-animation-div {
-    animation: typing-animation 1.5s step-start infinite;
+  animation: typing-animation 1.5s step-start infinite;
+}
+
+p {
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 @keyframes typing-animation {
