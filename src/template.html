@@ -22,16 +22,29 @@
                 Luke Sullivan
             </h1>
             <div>
-                <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
+                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer">
                     &#9776;
                 </button>
-                <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+                <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
                     <a href="#hello" class="hover:opacity-90">Hello!</a>
                     <a href="#projects" class="hover:opacity-90">Projects</a>
                     <a href="#about-me" class="hover:opacity-90">About</a>
                     <a href="#contact" class="hover:opacity-90">Contact</a>
                 </nav>
             </div>
+        </section>
+
+        <!-- MOBILE MENU -->
+        <section id="mobile-menu" class="absolute top-0 bg-neutral-950 w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
+            <button class="text-8xl self-end px-6">
+                &times;
+            </button>
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="#hello" class="w-full text-center py-6 hover:opacity-90">Hello!</a>
+                <a href="#projects" class="w-full text-center py-6 hover:opacity-90">Projects</a>
+                <a href="#about-me" class="w-full text-center py-6 hover:opacity-90">About</a>
+                <a href="#contact" class="w-full text-center py-6 hover:opacity-90">Contact</a>
+            </nav>
         </section>
     </header>
 
@@ -61,11 +74,9 @@
                 Tech Stack
             </h3>
             <ul class="w-3/4 list-none mx-auto my-6 flex justify-center flex-wrap flex-row items-center gap-4">
-                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">JavaScript
-                </li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">JavaScript</li>
                 <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">HTML/CSS</li>
-                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Tailwind CSS
-                </li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Tailwind CSS</li>
                 <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Python</li>
                 <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">React</li>
                 <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">MySQL</li>
