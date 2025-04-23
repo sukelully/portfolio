@@ -27,7 +27,7 @@
   animation: typing-animation 1.5s step-start infinite;
 }
 
-p, button, h1, h2, h3, a {
+p, button, h1, h2, h3, a, label, input, textarea {
   font-family: 'Outfit', sans-serif;
 }
 
