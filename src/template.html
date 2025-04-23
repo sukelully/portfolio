@@ -16,14 +16,17 @@
 <body class="min-h-screen bg-slate-50 dark:bg-neutral-950 dark:text-white">
 
     <!-- NAVBAR -->
-    <header class="bg-teal-900 text-white sticky top-0 z-10">
-        <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+    <header class="sticky top-0 z-10 bg-teal-900 text-white">
+        <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
             <h1 class="text-3xl font-medium">
                 Luke Sullivan
             </h1>
             <div>
-                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer">
-                    &#9776;
+                <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
+                    <!-- &#9776; -->
+                    <div
+                        class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
+                    </div>
                 </button>
                 <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
                     <a href="#hello" class="hover:opacity-90">Hello!</a>
@@ -34,11 +37,24 @@
             </div>
         </section>
 
-        <!-- MOBILE MENU -->
-        <section id="mobile-menu" class="absolute top-0 bg-neutral-950 w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
+        <!-- MOBILE MENU OLD -->
+        <!-- <section id="mobile-menu" class="absolute top-0 bg-neutral-950 w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
             <button class="text-8xl self-end px-6">
                 &times;
             </button>
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="#hello" class="w-full text-center py-6 hover:opacity-90">Hello!</a>
+                <a href="#projects" class="w-full text-center py-6 hover:opacity-90">Projects</a>
+                <a href="#about-me" class="w-full text-center py-6 hover:opacity-90">About</a>
+                <a href="#contact" class="w-full text-center py-6 hover:opacity-90">Contact</a>
+            </nav>
+        </section> -->
+
+        <section id="mobile-menu"
+            class="absolute top-68 bg-neutral-950 w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
+            <!-- <button class="text-8xl self-end px-6">
+                &times;
+            </button> -->
             <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
                 <a href="#hello" class="w-full text-center py-6 hover:opacity-90">Hello!</a>
                 <a href="#projects" class="w-full text-center py-6 hover:opacity-90">Projects</a>
@@ -74,9 +90,11 @@
                 Tech Stack
             </h3>
             <ul class="w-3/4 list-none mx-auto my-6 flex justify-center flex-wrap flex-row items-center gap-4">
-                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">JavaScript</li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">JavaScript
+                </li>
                 <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">HTML/CSS</li>
-                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Tailwind CSS</li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Tailwind CSS
+                </li>
                 <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Python</li>
                 <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">React</li>
                 <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">MySQL</li>
@@ -92,7 +110,7 @@
             </h2>
 
             <div id="unwind-chimes" class="dark:bg-slate-800 bg-slate-300 rounded-3xl p-8 shadow-xl">
-                <h3 class="text-4xl pb-6 font-bold text-center sm:text-left">
+                <h3 class="text-4xl pb-6 font-bold text-center sm:text-left truncate">
                     Unwind Chimes (WIP)
                 </h3>
                 <div class="flex flex-col sm:flex-row gap-8 items-center">
@@ -122,7 +140,7 @@
             </div>
 
             <div id="stringtendo" class="dark:bg-slate-800 bg-slate-300 rounded-3xl p-8 shadow-xl">
-                <h3 class="text-4xl pb-6 font-bold text-center sm:text-left">
+                <h3 class="text-4xl pb-6 font-bold text-center sm:text-left truncate">
                     Stringtendo
                 </h3>
                 <div class="flex flex-col sm:flex-row-reverse gap-8 items-center">
@@ -149,7 +167,7 @@
             </div>
 
             <div id="stringtendo" class="dark:bg-slate-800 bg-slate-300 rounded-3xl p-8 shadow-xl">
-                <h3 class="text-4xl pb-6 font-bold text-center sm:text-left">
+                <h3 class="text-4xl pb-6 font-bold text-center sm:text-left truncate">
                     clum.sy
                 </h3>
                 <div class="flex flex-col sm:flex-row gap-8 items-center">
@@ -181,7 +199,8 @@
 
         <!-- ABOUT ME -->
         <section id="about-me" class="p-6 my-12 scroll-mt-20">
-            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white widescreen:section-min-height tallscreen:section-min-height">
+            <h2
+                class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white widescreen:section-min-height tallscreen:section-min-height">
                 About Me
             </h2>
             <div class="flex sm:flex-row flex-col">
@@ -191,7 +210,8 @@
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
 
         <!-- CONTACT -->
-        <section id="contact" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+        <section id="contact"
+            class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Get In Touch
             </h2>
