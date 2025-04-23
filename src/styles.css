@@ -27,8 +27,8 @@
   animation: typing-animation 1.5s step-start infinite;
 }
 
-p {
-  font-family: 'Open Sans', 'Arial', sans-serif;
+p, button, h1, h2, h3, a {
+  font-family: 'Outfit', sans-serif;
 }
 
 @keyframes typing-animation {
