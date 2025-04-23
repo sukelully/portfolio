@@ -1,31 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="sm:scroll-smooth">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sukelully.dev</title>
     <script src="https://kit.fontawesome.com/9ab3110fa7.js" crossorigin="anonymous"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 </head>
 
-<body class="min-h-screen bg-slate-50 dark:bg-neutral-950 dark:text-white">
-
+<body class="min-h-screen bg-slate-100 dark:bg-neutral-950 dark:text-white">
     <!-- NAVBAR -->
     <header class="sticky top-0 z-10 bg-teal-900 text-white">
         <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
-            <h1 class="text-3xl font-medium">
-                Luke Sullivan
-            </h1>
+            <h1 class="text-3xl font-medium">Luke Sullivan</h1>
             <div>
                 <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
-                    <!-- &#9776; -->
                     <div
-                        class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
+                        class="absolute top-4 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
                     </div>
                 </button>
                 <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
@@ -37,24 +33,8 @@
             </div>
         </section>
 
-        <!-- MOBILE MENU OLD -->
-        <!-- <section id="mobile-menu" class="absolute top-0 bg-neutral-950 w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
-            <button class="text-8xl self-end px-6">
-                &times;
-            </button>
-            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
-                <a href="#hello" class="w-full text-center py-6 hover:opacity-90">Hello!</a>
-                <a href="#projects" class="w-full text-center py-6 hover:opacity-90">Projects</a>
-                <a href="#about-me" class="w-full text-center py-6 hover:opacity-90">About</a>
-                <a href="#contact" class="w-full text-center py-6 hover:opacity-90">Contact</a>
-            </nav>
-        </section> -->
-
         <section id="mobile-menu"
             class="absolute top-68 bg-neutral-950 w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
-            <!-- <button class="text-8xl self-end px-6">
-                &times;
-            </button> -->
             <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
                 <a href="#hello" class="w-full text-center py-6 hover:opacity-90">Hello!</a>
                 <a href="#projects" class="w-full text-center py-6 hover:opacity-90">Projects</a>
@@ -65,43 +45,59 @@
     </header>
 
     <main class="max-w-4xl mx-auto">
-
         <!-- HELLO -->
         <section id="hello"
             class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
             <article class="sm:w-1/2">
                 <h2
                     class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
-                    Front-End Developer with an <span class="text-indigo-700 dark:text-indigo-300">Engineering
-                        Mindset</span>
+                    Front-End Developer with an
+                    <span class="text-indigo-700 dark:text-indigo-300">Engineering Mindset</span>
                 </h2>
-                <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">Hi! I'm
-                    a front-end developer with a background in electronic engineering and audio technology.</p>
+                <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
+                    Hi! I'm a front-end developer with a background in electronic
+                    engineering and audio technology.
+                </p>
             </article>
             <div id="image-container" class="flex flex-row gap-4 items-end">
-                <img class="w-1/2" src="./img/profile-pic.png"
-                    alt="A selfie of myself in an aircraft wearing a headset!">
+                <img class="w-1/2" src="./img/hello-pic.png"
+                    alt="A selfie of myself in an aircraft wearing a headset!" />
                 <div id="typing-animation-div" class="w-1/3 bg-teal-900 h-3"></div>
             </div>
         </section>
+
         <!-- TECH STACK -->
-        <div id="tech-stack" class="mb-12">
-            <h3 class="text-3xl text-center">
-                Tech Stack
-            </h3>
-            <ul class="w-3/4 list-none mx-auto my-6 flex justify-center flex-wrap flex-row items-center gap-4">
-                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">JavaScript
+        <div id="tech-stack" class="my-12 w-3/4 mx-auto">
+            <h3 class="text-3xl text-center">Tech Stack</h3>
+            <ul class="list-none mx-auto my-6 flex justify-center flex-wrap flex-row items-center gap-4">
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">
+                    JavaScript
                 </li>
-                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">HTML/CSS</li>
-                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Tailwind CSS
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">
+                    HTML/CSS
                 </li>
-                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Python</li>
-                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">React</li>
-                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">MySQL</li>
-                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">Node.js</li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">
+                    Tailwind CSS
+                </li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">
+                    Python
+                </li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">
+                    React
+                </li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">
+                    MySQL
+                </li>
+                <li class="text-center border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-2">
+                    Node.js
+                </li>
             </ul>
+            <p class="text-lg">I primarily work with JavaScript, HTML, and CSS, building clean, functional web
+                interfaces from the ground up. Recently, I've added <span class="font-bold">React</span> and <span
+                    class="font-bold">Tailwind CSS</span> to my toolset to streamline development and enhance UI/UX. I'm
+                always eager to explore new technologies and continuously level up my skills.</p>
         </div>
-        <hr class="mx-auto bg-black dark:bg-white w-1/2">
+        <hr class="mx-auto bg-black dark:bg-white w-1/2" />
 
         <!-- PROJECTS -->
         <section id="projects" class="p-6 my-12 flex flex-col gap-20 scroll-mt-20">
@@ -110,19 +106,20 @@
             </h2>
 
             <div id="unwind-chimes" class="dark:bg-slate-800 bg-slate-300 rounded-3xl p-8 shadow-xl">
-                <h3 class="text-4xl pb-6 font-bold text-center sm:text-left truncate">
+                <h3 class="text-4xl pb-6 font-bold text-center sm:text-left">
                     Unwind Chimes (WIP)
                 </h3>
                 <div class="flex flex-col sm:flex-row gap-8 items-center">
                     <img src="./img/unwind-chimes.png" class="sm:w-1/2 w-3/4"
-                        alt="Visual mockup for Unwind Chimes app featuring floating gradient balls and a central black orb on a minimal white canvas.">
+                        alt="Visual mockup for Unwind Chimes app featuring floating gradient balls and a central black orb on a minimal white canvas." />
                     <p>
-                        Unwind Chimes is an interactive web app that creates random, evovling chord progressions and
-                        relaxing soundscapes using physics-based simulations powered by Matter.js.
-                        <br>
-                        <br>
-                        It employs the Karplus-Strong plucked string algorithm to generate audio in the browser via the
-                        Web Audio API.
+                        Unwind Chimes is an interactive web app that creates random,
+                        evovling chord progressions and relaxing soundscapes using
+                        physics-based simulations powered by Matter.js.
+                        <br />
+                        <br />
+                        It employs the Karplus-Strong plucked string algorithm to generate
+                        audio in the browser via the Web Audio API.
                     </p>
                 </div>
                 <div id="links-container" class="flex flex-row flex-wrap justify-center pt-6 gap-8">
@@ -140,21 +137,24 @@
             </div>
 
             <div id="stringtendo" class="dark:bg-slate-800 bg-slate-300 rounded-3xl p-8 shadow-xl">
-                <h3 class="text-4xl pb-6 font-bold text-center sm:text-left truncate">
+                <h3 class="text-4xl pb-6 font-bold text-center sm:text-left">
                     Stringtendo
                 </h3>
                 <div class="flex flex-col sm:flex-row-reverse gap-8 items-center">
-                    <img src="./img/stringtendo.jpg" class="sm:w-1/2 rounded-lg" alt="">
+                    <img src="./img/stringtendo.jpg" class="sm:w-1/2 rounded-lg" alt="" />
                     <p>
-                        Stringtendo is a digital instrument I created for my final year BEng project at university.
-                        Joystick and accelerometer data is sent to the broswer using an Arduino microcontroller via the
-                        Web Serial API where it is sonified using the Tone.js library.
-                        <br>
-                        <br>
-                        The main purpose of the project was to investigate the cause of the poor sound quality of
-                        Tone.js's <code>PluckSynth</code> module. Although I was able to implement an improvement in my
-                        code, submitting a pull request was not possible due to the problem
-                        <code>FeedbackCombFilter</code> module having other dependencies.
+                        Stringtendo is a digital instrument I created for my final year
+                        BEng project at university. Joystick and accelerometer data is
+                        sent to the broswer using an Arduino microcontroller via the Web
+                        Serial API where it is sonified using the Tone.js library.
+                        <br />
+                        <br />
+                        The main purpose of the project was to investigate the cause of
+                        the poor sound quality of Tone.js's
+                        <code>PluckSynth</code> module. Although I was able to implement
+                        an improvement in my code, submitting a pull request was not
+                        possible due to the problem <code>FeedbackCombFilter</code> module
+                        having other dependencies.
                     </p>
                 </div>
                 <div id="links-container" class="flex flex-row flex-wrap justify-center pt-6 gap-8">
@@ -167,16 +167,18 @@
             </div>
 
             <div id="stringtendo" class="dark:bg-slate-800 bg-slate-300 rounded-3xl p-8 shadow-xl">
-                <h3 class="text-4xl pb-6 font-bold text-center sm:text-left truncate">
+                <h3 class="text-4xl pb-6 font-bold text-center sm:text-left">
                     clum.sy
                 </h3>
                 <div class="flex flex-col sm:flex-row gap-8 items-center">
                     <img src="./img/clum-sy.png" class="sm:w-1/2 rounded-lg"
-                        alt="Visual mockup for Unwind Chimes app featuring floating gradient balls and a central black orb on a minimal white canvas.">
+                        alt="Visual mockup for Unwind Chimes app featuring floating gradient balls and a central black orb on a minimal white canvas." />
                     <p>
-                        clum.sy is another interactive music app built for iPads in Swift as part of my iOS Audio
-                        Programming module at university. The app is essentially a precursor to Unwind Chimes and
-                        functions very similarly, though it uses MIDI samples instead of synthesised audio.
+                        clum.sy is another interactive music app built for iPads in Swift
+                        as part of my iOS Audio Programming module at university. The app
+                        is essentially a precursor to Unwind Chimes and functions very
+                        similarly, though it uses MIDI samples instead of synthesised
+                        audio.
                     </p>
                 </div>
                 <div id="links-container" class="flex flex-row flex-wrap justify-center pt-6 gap-8">
@@ -193,29 +195,41 @@
                     </a>
                 </div>
             </div>
-
         </section>
-        <hr class="mx-auto bg-black dark:bg-white w-1/2">
+        <hr class="mx-auto bg-black dark:bg-white w-1/2" />
 
         <!-- ABOUT ME -->
-        <section id="about-me" class="p-6 my-12 scroll-mt-20">
-            <h2
-                class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white widescreen:section-min-height tallscreen:section-min-height">
+        <section id="about-me"
+            class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 About Me
             </h2>
-            <div class="flex sm:flex-row flex-col">
-
+            <div class="flex flex-col justify-center md:flex-row items-center gap-8">
+                <img src="./img/about-pic.jpg" alt="A picture of me smiling at the camera whilst working at my desk."
+                    class="md:w-1/3 w-1/2 rounded-tl-[30%] rounded-tr-xl rounded-br-[30%] rounded-bl-xl border-[0.5rem] border-teal-900">
+                <p class="text-lg">I've always been drawn to the creative side of building things—whether it was piecing
+                    together Lego
+                    spaceships as a kid or getting lost perfecting an perfect 8-bar loop in Ableton Live. After being
+                    exposed to programming whilst studying Electronic Engineering at university, I was hooked. I gained
+                    experience with several languages during my studies, including C, Python, Java and Swift, before
+                    finally landing in front-end development where I truly found my niche.
+                    <br>
+                    <br>
+                    I love creating interactive web apps and compelling user interfaces. Feel free to reach out using
+                    the contact details below—I'm always up for a new challenge.
+                </p>
             </div>
+
         </section>
-        <hr class="mx-auto bg-black dark:bg-white w-1/2">
+        <hr class="mx-auto bg-black dark:bg-white w-1/2" />
 
         <!-- CONTACT -->
         <section id="contact"
             class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
-            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl text-slate-900 dark:text-white">
                 Get In Touch
             </h2>
-            <div class="flex flex-row flex-wrap items-center justify-center gap-8">
+            <div class="flex flex-row flex-wrap items-center justify-center gap-8 my-6">
                 <!-- <a href="mailto:sullivanluke97@gmail.com" class="flex items-center">
                     <i class="fa-solid fa-envelope"></i>
                     <span class="pl-2">sullivanluke97@gmail.com</span>
@@ -235,12 +249,14 @@
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" required minlength="3" maxlength="60"
                     placeholder="Your Subject"
-                    class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none shadow-lg">
+                    class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none shadow-lg" />
                 <label for="message">Message:</label>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required
-                    class="w-full h-60 text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none shadow-lg"></textarea>
+                    class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"></textarea>
                 <button
-                    class="bg-teal-900 hover:bg-teal-800 active:bg-teal-500 text-white p-3 w-48 rounded-xl shadow-lg dark:border-none">Submit</button>
+                    class="bg-teal-900 hover:bg-teal-800 active:bg-teal-500 text-white p-3 w-48 rounded-xl shadow-lg dark:border-none">
+                    Submit
+                </button>
             </form>
         </section>
     </main>
