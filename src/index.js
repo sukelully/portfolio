@@ -20,8 +20,4 @@ const initApp = () => {
 const year = document.getElementById('year');
 year.textContent = new Date().getFullYear();
 
-window.onload = function () {
-    window.location.hash = "#hello";
-};
-
 document.addEventListener('DOMContentLoaded', initApp);
