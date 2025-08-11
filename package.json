@@ -10,10 +10,22 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prettier": "prettier . --write",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
