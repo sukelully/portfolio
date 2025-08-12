@@ -3,7 +3,8 @@
 
 @theme {
   --color-primary: #134e4a;
-  --open-sans: 'Outfit', sans-serif;
+  --color-secondary: #4338ca;
+  --color-secondary-hover: #3730a3;
   --default-font-family: 'Outfit', var(--font-sans);
 }
 
@@ -85,4 +86,16 @@
 
 .typing-cursor {
   animation: typing-animation 1.5s step-start infinite;
+}
+
+.nav-link-mobile {
+  @apply w-full py-6 text-center text-black hover:opacity-90 dark:text-white;
+}
+
+.project-btn-link {
+  @apply bg-secondary hover:bg-secondary-hover flex flex-row items-center rounded-lg px-6 py-2 font-semibold text-nowrap text-white shadow-lg transition duration-300;
+}
+
+.separator {
+  @apply mx-auto w-1/2 bg-black dark:bg-white;
 }

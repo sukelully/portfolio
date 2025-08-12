@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="sticky top-0 z-10 bg-teal-900 text-white">
+    <header className="bg-primary sticky top-0 z-10 text-white">
       <section className="mx-auto flex max-w-4xl items-center justify-between p-4">
         <h1 className="text-3xl font-medium">sukelully.dev</h1>
         <div>
@@ -34,28 +34,16 @@ function Header() {
         className="animate-open-menu absolute top-68 hidden w-full origin-top flex-col justify-center bg-slate-100 text-5xl dark:bg-neutral-950"
       >
         <nav className="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
-          <a
-            href="#hello"
-            className="w-full py-6 text-center text-black hover:opacity-90 dark:text-white"
-          >
+          <a href="#hello" className="">
             Hello!
           </a>
-          <a
-            href="#projects"
-            className="w-full py-6 text-center text-black hover:opacity-90 dark:text-white"
-          >
+          <a href="#projects" className="nav-link-mobile">
             Projects
           </a>
-          <a
-            href="#about-me"
-            className="w-full py-6 text-center text-black hover:opacity-90 dark:text-white"
-          >
+          <a href="#about-me" className="nav-link-mobile">
             About
           </a>
-          <a
-            href="#contact"
-            className="w-full py-6 text-center text-black hover:opacity-90 dark:text-white"
-          >
+          <a href="#contact" className="nav-link-mobile">
             Contact
           </a>
         </nav>

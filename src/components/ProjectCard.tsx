@@ -28,7 +28,7 @@ function ProjectCard({
       </div>
       <div id="links-container" className="flex flex-row flex-wrap justify-center gap-8 pt-6">
         <a
-          className="flex flex-row items-center rounded-lg bg-indigo-700 px-6 py-2 font-semibold text-nowrap text-white shadow-lg transition duration-300 hover:bg-indigo-800"
+          className="project-btn-link"
           href={siteLink}
           target="_blank"
           rel="noopener noreferrer"
@@ -40,7 +40,7 @@ function ProjectCard({
           </span>
         </a>
         <a
-          className="flex flex-row items-center rounded-lg bg-indigo-700 px-6 py-2 font-semibold text-nowrap text-white shadow-lg transition duration-300 hover:bg-indigo-800"
+          className="project-btn-link"
           href={githubLink}
           target="_blank"
           rel="noopener noreferrer"
