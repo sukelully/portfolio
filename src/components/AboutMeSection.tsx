@@ -16,15 +16,12 @@ function AboutMeSection() {
           className="w-3/4 rounded-tl-[30%] rounded-tr-xl rounded-br-[30%] rounded-bl-xl border-[0.5rem] border-teal-900 sm:w-2/5"
         />
         <p className="text-lg">
-          I've always been drawn to the creative side of the build process—whether it was piecing
-          together Lego spaceships as a kid or getting lost perfecting an 8-bar loop in Ableton
-          Live. After being exposed to programming whilst studying Electronic Engineering at
-          university, I was hooked. I gained experience with several languages during my studies,
-          including Python, C, Java and Swift, before finally landing in front-end development where
-          I truly found my niche.
-          <br />
-          <br />I love creating interactive web apps and compelling user interfaces. Feel free to
-          reach out using my contact details below.
+          I'm a driven, detail-oriented full-stack developer with a background in Electronic
+          Engineering and Music Technology Systems. I love building interactive, user-focused web
+          apps—combining creativity and technical precision. From real-time audio synthesis projects
+          like Unwind Chimes to sleek, responsive interfaces in React, TypeScript, and Next.js, I
+          bring ideas to life from concept to deployment. Feel free to reach out using my contact
+          details below.
         </p>
       </div>
     </section>

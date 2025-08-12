@@ -38,15 +38,15 @@ function ContactSection() {
         method="POST"
         className="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl"
       >
-        <label htmlFor="subject">Name:</label>
+        <label htmlFor="subject">Email:</label>
         <input
-          type="text"
-          id="name"
-          name="name"
+          type="email"
+          id="email"
+          name="email"
           required
           minLength={3}
           maxLength={60}
-          placeholder="Your name"
+          placeholder="Your email"
           aria-label="Enter the subject of your message"
           className="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black shadow-md sm:text-3xl dark:border-none dark:bg-white"
         />
