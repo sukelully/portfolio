@@ -1,3 +1,5 @@
+import heroPic from '@/images/hero-pic.webp';
+
 function HeroSection() {
   return (
     <section
@@ -6,7 +8,7 @@ function HeroSection() {
     >
       <article className="sm:w-1/2">
         <h2 className="max-w-md text-center text-4xl font-bold text-slate-900 sm:text-left sm:text-5xl dark:text-white">
-          Full-Stack Developer with an
+          Full-Stack Developer with an{' '}
           <span className="text-indigo-700 dark:text-indigo-300">Engineering Mindset</span>
         </h2>
         <p className="mt-4 max-w-md text-center text-2xl text-slate-700 sm:text-left dark:text-slate-400">
@@ -17,10 +19,10 @@ function HeroSection() {
       <div id="image-container" className="flex flex-row items-end gap-4">
         <img
           className="w-1/2"
-          src="./img/hello-pic.webp"
+          src={heroPic}
           alt="A selfie of myself in an aircraft wearing a headset!"
         />
-        <div id="typing-animation-div" className="h-3 w-1/3 bg-teal-900"></div>
+        <div className="bg-primary typing-cursor h-3 w-1/3"></div>
       </div>
     </section>
   );
