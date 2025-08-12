@@ -12,10 +12,8 @@ function TechStack() {
         ))}
       </ul>
       <p className="text-lg">
-        I primarily work with JavaScript, HTML and CSS, building clean, functional web interfaces
-        from the ground up. I've recently added <span className="font-bold">React</span> and{' '}
-        <span className="font-bold">Tailwind CSS</span> to my toolset to streamline development and
-        enhance UI/UX, and I'm always keen to explore new technologies and level up my skills.
+        <strong>TypeScript</strong>, <strong>Next.js</strong>, and <strong>Tailwind</strong> are my
+        go-to tools for crafting clean, scalable, full-stack applications.
       </p>
     </div>
   );

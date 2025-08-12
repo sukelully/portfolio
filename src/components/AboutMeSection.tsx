@@ -16,11 +16,12 @@ function AboutMeSection() {
           className="w-3/4 rounded-tl-[30%] rounded-tr-xl rounded-br-[30%] rounded-bl-xl border-[0.5rem] border-teal-900 sm:w-2/5"
         />
         <p className="text-lg">
-          I'm a driven, detail-oriented full-stack developer with a background in Electronic
-          Engineering and Music Technology Systems. I love building interactive, user-focused web
-          apps—combining creativity and technical precision. From real-time audio synthesis projects
-          like Unwind Chimes to sleek, responsive interfaces in React, TypeScript, and Next.js, I
-          bring ideas to life from concept to deployment. Feel free to reach out using my contact
+          I'm a full-stack developer with a knack for blending creativity and technical precision. I
+          first discovered programming while studying Electronic Engineering with Music Technology
+          Systems at university and was immediately hooked. After two years in electronics
+          manufacturing, I fully retrained as a developer, bringing with me a problem-solving
+          mindset and an eye for detail. I especially enjoy projects that combine code and sound,
+          creating interactive and immersive experiences. Feel free to reach out using my contact
           details below.
         </p>
       </div>
