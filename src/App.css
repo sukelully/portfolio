@@ -28,15 +28,15 @@
 
 /* Widescreen */
 @media (min-aspect-ratio: 3/2) {
-  .widescreen\:block {
-    display: block;
+  .widescreen\:section-min-height {
+    min-height: calc(100vh - 68px);
   }
 }
 
 /* Tallscreen */
 @media (max-aspect-ratio: 13/20) {
-  .tallscreen\:block {
-    display: block;
+  .tallscreen\:section-min-height {
+    min-height: calc(100vh - 68px);
   }
 }
 

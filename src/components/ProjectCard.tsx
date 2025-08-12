@@ -3,8 +3,10 @@ export type ProjectCardProps = {
   description: string;
   imgSrc: string;
   imgAlt: string;
-  siteLink: string;
+  imgSize?: string;
+  siteLink?: string;
   githubLink: string;
+  flexDir?: string;
 };
 
 function ProjectCard({
@@ -12,14 +14,16 @@ function ProjectCard({
   description,
   imgSrc,
   imgAlt,
+  imgSize,
   siteLink,
   githubLink,
+  flexDir,
 }: ProjectCardProps) {
   return (
     <div id="unwind-chimes" className="rounded-3xl bg-slate-300 p-8 shadow-xl dark:bg-slate-800">
       <h3 className="pb-6 text-center text-3xl font-bold sm:text-left sm:text-4xl">{name}</h3>
-      <div className="flex flex-col items-center gap-8">
-        <img src={imgSrc} className="w-3/4" alt={imgAlt} />
+      <div className={`flex ${flexDir} items-center gap-8`}>
+        <img src={imgSrc} className={imgSize ?? 'w-3/4'} alt={imgAlt} />
         <p className="text-lg">{description}</p>
       </div>
       <div id="links-container" className="flex flex-row flex-wrap justify-center gap-8 pt-6">
