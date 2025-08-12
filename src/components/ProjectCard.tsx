@@ -7,6 +7,7 @@ export type ProjectCardProps = {
   siteLink?: string;
   githubLink: string;
   flexDir?: string;
+  techStack: string[];
 };
 
 function ProjectCard({
@@ -18,6 +19,7 @@ function ProjectCard({
   siteLink,
   githubLink,
   flexDir,
+  techStack,
 }: ProjectCardProps) {
   return (
     <div id="unwind-chimes" className="rounded-3xl bg-slate-300 p-8 shadow-xl dark:bg-slate-800">
@@ -26,19 +28,31 @@ function ProjectCard({
         <img src={imgSrc} className={imgSize ?? 'w-3/4'} alt={imgAlt} />
         <p className="text-lg">{description}</p>
       </div>
-      <div id="links-container" className="flex flex-row flex-wrap justify-center gap-8 pt-6">
-        <a
-          className="project-btn-link"
-          href={siteLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-labelledby="visitSite-unwindchimes"
-        >
-          <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-          <span id="visitSite-unwindchimes" className="pl-2">
-            Visit Site
+      <div id="tech-stack" className="mt-4 flex flex-wrap justify-center gap-2">
+        {techStack.map((item) => (
+          <span
+            key={item}
+            className="rounded-full bg-slate-200 px-3 py-1 text-sm font-medium text-slate-800 dark:bg-slate-700 dark:text-slate-200"
+          >
+            {item}
           </span>
-        </a>
+        ))}
+      </div>
+      <div id="links-container" className="flex flex-row flex-wrap justify-center gap-8 pt-6">
+        {siteLink && (
+          <a
+            className="project-btn-link"
+            href={siteLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-labelledby="visitSite-unwindchimes"
+          >
+            <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            <span id="visitSite-unwindchimes" className="pl-2">
+              Visit Site
+            </span>
+          </a>
+        )}
         <a
           className="project-btn-link"
           href={githubLink}

@@ -1,26 +1,15 @@
+import { techStack } from '@/data/projects';
+
 function TechStack() {
   return (
     <div id="tech-stack" className="mx-auto my-12 w-3/4">
       <h3 className="text-center text-3xl">Tech Stack</h3>
       <ul className="mx-auto my-6 flex list-none flex-row flex-wrap items-center justify-center gap-4">
-        <li className="rounded-lg border border-slate-300 px-4 py-2 text-center dark:border-slate-600">
-          JavaScript
-        </li>
-        <li className="rounded-lg border border-slate-300 px-4 py-2 text-center dark:border-slate-600">
-          HTML/CSS
-        </li>
-        <li className="rounded-lg border border-slate-300 px-4 py-2 text-center dark:border-slate-600">
-          Tailwind CSS
-        </li>
-        <li className="rounded-lg border border-slate-300 px-4 py-2 text-center dark:border-slate-600">
-          Python
-        </li>
-        <li className="rounded-lg border border-slate-300 px-4 py-2 text-center dark:border-slate-600">
-          React
-        </li>
-        <li className="rounded-lg border border-slate-300 px-4 py-2 text-center dark:border-slate-600">
-          MySQL
-        </li>
+        {techStack.map((item) => (
+          <li key={item} className="tech-stack-item">
+            {item}
+          </li>
+        ))}
       </ul>
       <p className="text-lg">
         I primarily work with JavaScript, HTML and CSS, building clean, functional web interfaces

@@ -3,6 +3,7 @@
 
 @theme {
   --color-primary: #134e4a;
+  --color-primary-hover: #115e59;
   --color-secondary: #4338ca;
   --color-secondary-hover: #3730a3;
   --default-font-family: 'Outfit', var(--font-sans);
@@ -98,4 +99,8 @@
 
 .separator {
   @apply mx-auto w-1/2 bg-black dark:bg-white;
+}
+
+.tech-stack-item {
+  @apply rounded-lg border border-slate-300 px-4 py-2 text-center dark:border-slate-600;
 }

@@ -9,7 +9,7 @@ function HeroSection() {
       <article className="sm:w-1/2">
         <h2 className="max-w-md text-center text-4xl font-bold text-slate-900 sm:text-left sm:text-5xl dark:text-white">
           Full-Stack Developer with an{' '}
-          <span className="text-secondary dark:text-indigo-300">Engineering Mindset</span>
+          <span className="text-secondary dark:text-indigo-300">Engineering Background</span>
         </h2>
         <p className="mt-4 max-w-md text-center text-2xl text-slate-700 sm:text-left dark:text-slate-400">
           Hi! I'm a full-stack developer with a background in electronic engineering and audio

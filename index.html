@@ -1,13 +1,36 @@
 <!doctype html>
 <html lang="en" class="sm:scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/9ab3110fa7.js" crossorigin="anonymous"></script>
-    <title>sukelully.dev</title>
-  </head>
-  <body class="bg-slate-150 min-h-screen dark:bg-neutral-950 dark:text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description"
+        content="Hi! I'm Luke, a full-stack developer with a background in engineering. Check out some of my work and reach out if any of it interests you." />
+    <meta name="keywords" content="full-stack developer, front-end, back-end, frontend, backend, portfolio, TypeScript, JavaScript, React, Tailwind CSS, projects" />
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/9ab3110fa7.js" crossorigin="anonymous"></script>
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Luke Sullivan Developer Portfolio" />
+  <meta property="og:description"
+    content="Hi! I'm Luke, a front-end developer with a background in engineering. Check out some of my work and reach out if any of it interests you." />
+  <meta property="og:image" content="https://sukelully.dev/og-image.webp" />
+  <meta property="og:url" content="https://sukelully.dev/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/public/favicon/site.webmanifest" />
+  <title>sukelully.dev</title>
+</head>
+
+<body class="bg-slate-150 min-h-screen dark:bg-neutral-950 dark:text-white">
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

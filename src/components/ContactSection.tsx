@@ -48,7 +48,7 @@ function ContactSection() {
           maxLength={60}
           placeholder="Your name"
           aria-label="Enter the subject of your message"
-          className="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black shadow-md sm:text-3xl dark:border-none"
+          className="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black shadow-md sm:text-3xl dark:border-none dark:bg-white"
         />
         <label htmlFor="message">Message:</label>
         <textarea
@@ -59,11 +59,11 @@ function ContactSection() {
           aria-label="Enter the content of your message"
           placeholder="Your message"
           required
-          className="h-60 w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black shadow-md sm:text-3xl dark:border-none"
+          className="h-60 w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black shadow-md sm:text-3xl dark:border-none dark:bg-white"
         ></textarea>
         <button
           type="submit"
-          className="mx-auto w-48 rounded-xl bg-teal-900 p-3 font-bold text-white shadow-lg hover:bg-teal-800 active:bg-teal-500 dark:border-none"
+          className="bg-primary hover:bg-primary-hover mx-auto w-48 cursor-pointer rounded-xl p-3 font-bold text-white shadow-lg transition duration-300 active:bg-teal-500 dark:border-none"
           aria-label="Submit your message"
         >
           Submit
