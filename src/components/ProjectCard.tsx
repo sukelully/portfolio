@@ -38,7 +38,10 @@ function ProjectCard({
           </span>
         ))}
       </div>
-      <div id="links-container" className="flex flex-row flex-wrap justify-center gap-8 pt-6">
+      <div
+        id="links-container"
+        className="flex flex-row flex-wrap justify-center gap-2 pt-6 sm:gap-8"
+      >
         {siteLink && (
           <a
             className="project-btn-link"
