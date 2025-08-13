@@ -6,6 +6,8 @@
   --color-primary-hover: #115e59;
   --color-secondary: #4338ca;
   --color-secondary-hover: #3730a3;
+  --color-bg: #f8fafc;
+  --color-bg-dark: #0a0a0a;
   --default-font-family: 'Outfit', var(--font-sans);
 }
 
@@ -103,4 +105,8 @@
 
 .tech-stack-item {
   @apply rounded-lg border border-slate-300 px-4 py-2 text-center dark:border-slate-600;
+}
+
+.toggle-btn {
+  @apply [&>div]:bg-transparent [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div::before]:translate-y-0 [&>div::before]:rotate-45;
 }
