@@ -27,6 +27,7 @@ export const projects: ProjectCardProps[] = [
     techStack: [
       'React',
       'TypeScript',
+      'Node.js',
       'Tailwind CSS',
       'Web Audio API',
       'Canvas API',

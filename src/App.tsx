@@ -4,7 +4,7 @@ import HeroSection from '@/components/HeroSection';
 import TechStack from '@/components/TechStack';
 import ProjectSection from '@/components/ProjectSection';
 import AboutMeSection from '@/components/AboutMeSection';
-import ContactSection from './components/ContactSection';
+import ContactSection from '@/components/ContactSection';
 
 function App() {
   return (
