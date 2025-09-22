@@ -1,12 +1,34 @@
 import type { ProjectCardProps } from '@/components/ProjectCard';
-import unwindChimesImg from '@/images/unwind-chimes.webp';
-import voiceBoxImg from '@/images/voicebox.webp';
+import unwindChimesImg from '@/assets/unwind-chimes.webp';
+import voiceBoxImg from '@/assets/voicebox.webp';
+import hueifyImg from '@/assets/hueify.webp';
 
 export const projects: ProjectCardProps[] = [
   {
+    name: 'Hueify',
+    description:
+      "Hueify is a web app that sorts Spotify playlists by the dominant color of each track's album artwork. The app authenticates with the Spotify Web API and stores session and account data securely on a PostgreSQL database hosted on Supabase. After granting read-write access, users can choose a playlist to sort and fine-tune the color extraction of each track before saving it to their Spotify account. A GitHub Actions CI workflow builds, lints and tests pull requests to ensure clean merges.",
+    imgSrc: hueifyImg,
+    imgAlt: 'The playlist sorting interface of Hueify',
+    imgSize: 'sm:w-3/4',
+    githubLink: 'https://github.com/sukelully/hueify',
+    siteLink: 'https://hueify.vercel.app',
+    flexDir: 'flex-col',
+    techStack: [
+      'Next.js',
+      'PostgreSQL',
+      'TypeScript',
+      'Prisma',
+      'React',
+      'Better Auth',
+      'Supabase',
+      'Github Actions (CI)',
+    ],
+  },
+  {
     name: 'VoiceBox',
     description:
-      "Built for freeCodeCamp's 2025 Summer Hackathon, VoiceBox is an anonymous suggestion box for workplaces, communities, and schools. It enables open feedback while giving admins an efficient way to review and respond. Built with Next.js 14 (App Router), NextAuth.js for Google authentication, and MongoDB + Prisma for data management, it uses GitHub Actions to lint, build, and test code on every push, ensuring production-ready deployments.",
+      "Built for freeCodeCamp's 2025 Summer Hackathon, VoiceBox is an anonymous online suggestion box for workplaces, communities, and schools. The app enables open feedback while giving admins an efficient way to review and respond. VoiceBox was built with Next.js 14, NextAuth.js for Google authentication, and MongoDB + Prisma for data management. It also uses a GitHub Actions CI workflow to build, lint and test pull requests.",
     imgSrc: voiceBoxImg,
     imgAlt: 'Screenshot of VoiceBox app',
     imgSize: 'sm:w-3/4',
@@ -17,7 +39,7 @@ export const projects: ProjectCardProps[] = [
   {
     name: 'Unwind Chimes',
     description:
-      'Unwind Chimes transforms real-world weather data from your location or a randomly chosen city into dynamic, immersive soundscapes. Built with React and TypeScript, it harnesses the Web Audio API to synthesise audio directly in the browser, mapping weather conditions to synthesis and effects parameters to create a unique ambient experience that reflects the world’s climate in sound.',
+      "A fun spin on a classic weather app, Unwind Chimes is a wind chime simulator! The app maps global or local weather data to audio synthesis and effects parameters to create a uniquely ambient experience that refelects the world's climate in sound.",
     imgSrc: unwindChimesImg,
     imgAlt: 'Screenshot of Unwind Chimes app',
     imgSize: 'sm:w-1/2',
@@ -39,13 +61,13 @@ export const projects: ProjectCardProps[] = [
 export const techStack: string[] = [
   'TypeScript',
   'JavaScript',
+  'Python',
   'React',
+  'HTML/CSS',
   'Tailwind CSS',
   'Node.js',
-  'HTML/CSS',
   'Next.js',
   'Express.js',
-  'Python',
   'MongoDB',
   'Prisma',
   'PostgreSQL',

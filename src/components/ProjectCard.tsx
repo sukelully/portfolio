@@ -22,13 +22,16 @@ function ProjectCard({
   techStack,
 }: ProjectCardProps) {
   return (
-    <div id="unwind-chimes" className="rounded-3xl bg-slate-300 p-8 shadow-xl dark:bg-slate-800">
+    <div
+      id="project-container"
+      className="rounded-3xl bg-slate-300 p-8 shadow-xl sm:px-12 dark:bg-slate-800"
+    >
       <h3 className="pb-6 text-center text-3xl font-bold sm:text-left sm:text-4xl">{name}</h3>
       <div className={`flex ${flexDir} items-center gap-8`}>
         <img src={imgSrc} className={imgSize ?? 'w-3/4'} alt={imgAlt} />
         <p className="text-lg">{description}</p>
       </div>
-      <div id="tech-stack" className="mt-4 flex flex-wrap justify-center gap-2">
+      <div id="tech-stack" className="mt-6 flex flex-wrap justify-center gap-2 sm:px-18">
         {techStack.map((item) => (
           <span
             key={item}

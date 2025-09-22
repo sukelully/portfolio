@@ -1,4 +1,4 @@
-import aboutMePic from '@/images/about-pic.webp';
+import aboutMePic from '@/assets/about-pic.webp';
 
 function AboutMeSection() {
   return (
