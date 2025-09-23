@@ -2,6 +2,7 @@ import type { ProjectCardProps } from '@/components/ProjectCard';
 import unwindChimesImg from '@/assets/unwind-chimes.webp';
 import voiceBoxImg from '@/assets/voicebox.webp';
 import hueifyImg from '@/assets/hueify.webp';
+import hueifyVid from '@/assets/hueify-demo.webm';
 
 export const projects: ProjectCardProps[] = [
   {
@@ -11,6 +12,7 @@ export const projects: ProjectCardProps[] = [
     imgSrc: hueifyImg,
     imgAlt: 'The playlist sorting interface of Hueify',
     imgSize: 'sm:w-3/4',
+    vidSrc: hueifyVid,
     githubLink: 'https://github.com/sukelully/hueify',
     siteLink: 'https://hueify.vercel.app',
     flexDir: 'flex-col',
