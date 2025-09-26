@@ -12,8 +12,7 @@ function HeroSection() {
           <span className="text-secondary dark:text-indigo-300">Engineering Background</span>
         </h2>
         <p className="mt-4 max-w-md text-center text-2xl text-slate-700 sm:text-left dark:text-slate-400">
-          Hi! I'm a full-stack developer with a background in electronic engineering and audio
-          technology.
+          Hi! I'm a developer with a background in electronic engineering and audio technology.
         </p>
       </article>
       <div id="image-container" className="flex flex-row items-end gap-4">

@@ -10,7 +10,9 @@ function Header() {
   return (
     <header className="bg-primary sticky top-0 z-10 text-white">
       <section className="mx-auto flex max-w-4xl items-center justify-between p-4">
-        <h1 className="text-3xl font-medium">sukelully.dev</h1>
+        <a href="/">
+          <h1 className="text-3xl font-medium">sukelully.dev</h1>
+        </a>
         <div>
           <button
             aria-label="Open mobile menu"
