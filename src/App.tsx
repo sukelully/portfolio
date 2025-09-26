@@ -13,11 +13,11 @@ function App() {
       <main className="mx-auto max-w-4xl">
         <HeroSection />
         <TechStack />
-        <hr className="separator" />
+        <br />
         <ProjectSection />
-        <hr className="separator" />
+        <br />
         <AboutMeSection />
-        <hr className="separator" />
+        <br />
         <ContactSection />
       </main>
     </>

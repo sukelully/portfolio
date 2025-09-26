@@ -44,7 +44,7 @@ export const projects: ProjectCardProps[] = [
       "A fun spin on a classic weather app, Unwind Chimes is a wind chime simulator! The app maps global or local weather data to audio synthesis and effects parameters to create a uniquely ambient experience that refelects the world's climate in sound.",
     imgSrc: unwindChimesImg,
     imgAlt: 'Screenshot of Unwind Chimes app',
-    imgSize: 'sm:w-1/2',
+    imgSize: 'w-72 max-w-full md:w-80',
     siteLink: 'https://unwind-chimes.vercel.app',
     githubLink: 'https://github.com/sukelully/unwind-chimes',
     flexDir: 'sm:flex-row flex-col',

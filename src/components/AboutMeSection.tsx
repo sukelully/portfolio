@@ -13,7 +13,7 @@ function AboutMeSection() {
         <img
           src={aboutMePic}
           alt="A picture of me smiling at the camera whilst working at my desk."
-          className="w-3/4 rounded-tl-[30%] rounded-tr-xl rounded-br-[30%] rounded-bl-xl border-[0.5rem] border-teal-900 sm:w-2/5"
+          className="w-48 max-w-full rounded-tl-[30%] rounded-tr-xl rounded-br-[30%] rounded-bl-xl border-[0.5rem] border-teal-900 md:w-80 md:flex-shrink-0"
         />
         <p className="text-lg">
           I'm a full-stack developer with a knack for blending creativity and technical precision. I
