@@ -64,6 +64,7 @@ export const techStack: string[] = [
   'TypeScript',
   'JavaScript',
   'Python',
+  'Java',
   'React',
   'HTML/CSS',
   'Tailwind CSS',
