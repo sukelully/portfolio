@@ -69,6 +69,7 @@ export const techStack: string[] = [
   'HTML/CSS',
   'Tailwind CSS',
   'Node.js',
+  'Vitest/Jest',
   'Next.js',
   'Express.js',
   'MongoDB',
